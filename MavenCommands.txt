@@ -1,0 +1,5 @@
+To generate stubs:
+    mvn -DskipTests package
+
+find target/generated-sources
+mvn -DskipTests package exec:java -Dexec.mainClass=com.example.grpc.App
